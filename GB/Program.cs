@@ -10,11 +10,11 @@ namespace GB
     {
         static void Main(string[] args)
         {
-            Console.Write("What's your name? ");
-            var name = Console.ReadLine();
-            DateTime now = DateTime.Now;
-            string date = now.GetDateTimeFormats('d')[0];
-            Console.WriteLine($"Hello, {name}, today is {date}!");
+            Console.Write("Введите минимальную температуру ");
+            double tmin = Convert.ToDouble(Console.ReadLine());
+            Console.Write("Введите максимальную температуру ");
+            double tmax = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine($"Средняя температура {(tmin+tmax)/2}");
             Console.ReadLine();
         }
     }
